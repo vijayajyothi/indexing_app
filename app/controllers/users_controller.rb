@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   def index
  @search = User.search do
     fulltext params[:search]
+paginate  :page => params[:page], :per_page=>3
   end
   @users = @search.results
 #    @users = User.paginate(:page => params[:page], :per_page => 3)
