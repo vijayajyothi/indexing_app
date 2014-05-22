@@ -21,9 +21,14 @@ group :assets do
   gem 'twitter-bootstrap-rails'
   gem 'less-rails'
 end
-#gem 'will_paginate', '~> 3.0.5'
+gem 'will_paginate', '~> 3.0.5'
 gem 'jquery-rails'
-
+gem 'jquery-tablesorter'
+gem 'sunspot_rails'
+gem 'progress_bar'
+group :developement do 
+  gem 'sunspot_solr' # optional pre-packaged Solr distribution for use in development
+end
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
